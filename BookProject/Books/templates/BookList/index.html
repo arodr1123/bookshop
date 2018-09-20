@@ -1,0 +1,14 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body style="font-family: Roboto">
+    <h1 style="font-weight: normal; padding: 10px 0 0 35px; color: #59af73">List of Books</h1>
+    <ul style='list-style-type: none'>
+        {% for book in all_books %}
+        <li><a style="text-decoration: none; color: #58687b" href='/books/{{ book.id }}'>{{ book.Book_Title }}</a></li>
+        {% endfor %}
+    </ul>
+    <ul style='list-style-type: none'>
+        <li><a style="text-decoration: none; color: #608bc1" href='http://127.0.0.1:8000/home/'>Back</a></li>
+    </ul>
+</body>

@@ -1,0 +1,18 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body style="font-family: Roboto">
+    <h1 style="font-weight: normal; padding: 10px 0 0 35px; color: #59af73">{{ book.Book_Title }}</h1>
+    <ul style='list-style-type: none'>
+        <li style="color: #58687b">Author - {{ book.Book_Author }}</li>
+        <li style="color: #58687b">Genre - {{ book.Book_Genre }}</li>
+        <li style="color: #58687b">Price - ${{ book.Book_Price }}</li>
+        <li style="color: #58687b">Rating - {{ book.Book_Rating }} / 5</li>
+        <li style="color: #58687b">Release - {{ book.Book_Date }}</li>
+        <br>
+        <button style="background-color: #8a6bea; border: none; border-radius: 5px; padding: 5px 10px; color: white; outline: none; cursor: pointer">Check Out</button>
+    </ul>
+    <ul style='list-style-type: none'>
+        <li><a style="text-decoration: none; color: #608bc1" href='http://127.0.0.1:8000/books/'>Back</a></li>
+    </ul>
+</body>
